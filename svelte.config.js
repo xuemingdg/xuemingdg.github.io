@@ -1,11 +1,13 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-cloudflare';
 
-const config = {
-	kit: {
+export default {
+    kit: {
         adapter: adapter({
-            fallback: 'index.html' // may differ from host to host
+            // See below for an explanation of these options
+            routes: {
+                include: ['/*'],
+                exclude: ['<all>']
+            }
         })
-	}
+    }
 };
-
-export default config;
