@@ -47,4 +47,18 @@
         margin-inline-start: auto;
         font-family: 'Courier New', Courier, monospace;
     }
+
+    :global(a:visited) {
+        color: inherit;
+    }
+
+    :global(body) {
+		background-color: #fff;
+		color: #333;
+		transition: background-color 0.3s
+	}
+	:global(body.dark-mode) {
+		background-color: #333;
+		color: #fff;
+	}
 </style>
