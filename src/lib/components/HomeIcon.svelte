@@ -30,6 +30,7 @@
     button {
             border: none;
             background-color: transparent;
+            cursor: pointer;
     }
     :global(body.dark-mode) button {
         color: white;
